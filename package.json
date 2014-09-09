@@ -1,17 +1,17 @@
 {
-  "name": "mean-template",
+  "name": "angular-tools",
   "version": "0.0.0",
-  "description": "The MEAN Template",
+  "description": "A set of Angular examples written for Dave, by Dave. ",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chyld/mean-template"
+    "url": "https://github.com/kadowki/angular-tools"
   },
-  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "author": "David D. Boling <kadowki@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chyld/mean-template/issues"
+    "url": "https://github.com/kadowki/angular-tools/issues"
   },
-  "homepage": "https://github.com/chyld/mean-template",
+  "homepage": "https://github.com/kadowki/angular-tools",
   "dependencies": {
     "express": "~4.8.8",
     "morgan": "~1.3.0"
