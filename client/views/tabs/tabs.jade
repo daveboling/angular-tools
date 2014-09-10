@@ -6,16 +6,16 @@ html(ng-app='tabs')
   body
     section(ng-controller='TabController')
       ul.nav.nav-pills
-        li: a(href='#' ng-class=' active: isSelected(1)' ng-click='setTab(1)') Description
-        li: a(href='#' ng-class=' active: isSelected(2)' ng-click='setTab(2)') Specs
-        li: a(href='#' ng-class=' active: isSelected(3)' ng-click='setTab(3)') Reviews
+        li(ng-class='{ active:isSelected(1) }'): a(href='#'  ng-click='setTab(1)') Description
+        li(ng-class='{ active:isSelected(2) }'): a(href='#' ng-click='setTab(2)') Specs
+        li(ng-class='{ active:isSelected(3) }'): a(href='#' ng-click='setTab(3)') Reviews
       p You clicked on Tab # {{tab}}
 
-      #description(ng-show='isSelected(1)')
+      #description.panel(ng-show='isSelected(1)')
         p Here is your description, by default.
-      #specs(ng-show='isSelected(2)')
+      #specs.panel(ng-show='isSelected(2)')
         p Here is your specs.
-      #reviews(ng-show='isSelected(3)')
+      #reviews.panel(ng-show='isSelected(3)')
         p Here are your reviews
 
 
