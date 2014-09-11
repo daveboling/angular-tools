@@ -1,5 +1,5 @@
 doctype html
-html(ng-app='mean-template', lang='en')
+html(lang='en')
   head
     include views/shared/css
     title Main Page
@@ -9,6 +9,7 @@ html(ng-app='mean-template', lang='en')
         .col-xs-12
           ul
             li: a(href='/views/tabs/') Tabbing System
+            li: a(href='/views/graphs/') Graphing with Zillow
 
 include views/shared/scripts
 script(src='index.js')

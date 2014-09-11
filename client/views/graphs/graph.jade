@@ -1,0 +1,21 @@
+doctype html
+html(ng-app='graph', lang='en')
+  head
+    include ../shared/css
+    title Main Page
+  body(ng-controller='GraphCtrl')
+    .container
+      .row
+        .col-xs-12
+          ul
+            li: a(href='/views/tabs/') Tabbing System
+            li: a(href='/views/graphs/') Graphing with Zillow
+      .row
+        h2 {{title}} 
+
+        #chart(ng-view)
+
+include ../shared/scripts
+  script(src='http://demos.amitavroy.com/learningci/assets/js/xml2json.js')
+  script(src='graph.js')
+  script(src='../../components/zillow.js')

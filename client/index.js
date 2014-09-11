@@ -1,9 +1,8 @@
 (function(){
   'use strict';
 
-  angular.module('mean-template', [])
-  .controller('MainController', ['$scope', function($scope){
-
-  }]);
+  //var app = angular.module('index', []);
+  //app.module('index')
+  //.controller('MainController', ['$scope', function($scope){
+  //}]);
 })();
-

@@ -9,10 +9,6 @@
   Example would be to make a few templates with controllers pre-build in
   and use those templates elsewhere very effortlessly.
 
-  2.
-
-
-
   */
 
   //TAB CONTROLLER

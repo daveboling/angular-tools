@@ -14,9 +14,11 @@ app.use(express.static(__dirname + '/../public'));
 //app.set('views', __dirname + '/../publc/views/');
 
 //controller imports
-var tabs = require('./controllers/tabs');
+var tabs = require('./controllers/tabs'),
+  graphs = require('./controllers/graph');
 
 app.get('/views/tabs/', tabs.showPage);
+app.get('/views/graphs/', graphs.showPage);
 
 
 //server listen
