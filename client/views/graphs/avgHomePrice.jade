@@ -1,1 +1,7 @@
-h2 avgHomePrice Success!
+h2 avgHomePrice Success
+table.table
+  tr(ng-repeat='info in json["Demographics:demographics"].response.pages.page[0].tables.table.data.attribute')
+    th {{info.name}}
+      td City: {{info.values.city.value.$t}}
+      td Nation: {{info.values.nation.value.$t}}
+

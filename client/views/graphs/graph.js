@@ -1,4 +1,3 @@
-/*global X2JS */
 /* jshint camelcase:false */
 (function(){
   'use strict';
@@ -25,12 +24,9 @@
   //graph.html/jade
   graph.controller('GraphCtrl', ['$scope', 'zillow', function($scope, zillow){
     $scope.title = 'Zillow Chart Avg. Home Price';
-    zillow.getDemographics().success(function(data){
-      debugger;
-      var x2js = new X2JS(),
-      json = x2js.xml_str2json(data);
-      console.log(json);
-      return json;
+    zillow.getDemographics().then(function(res){
+      $scope.json = JSON.parse(res.data.neighborhood);
+      console.log($scope.json);
     });
   }]);
 

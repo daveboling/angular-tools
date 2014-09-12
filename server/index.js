@@ -19,6 +19,7 @@ var tabs = require('./controllers/tabs'),
 
 app.get('/views/tabs/', tabs.showPage);
 app.get('/views/graphs/', graphs.showPage);
+app.get('/ndata', graphs.graph);
 
 
 //server listen
